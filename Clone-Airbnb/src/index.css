@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.page {
+  margin: 0 15px;
+}
+
+.topbar {
+  background-color: #FF5A5F;
+}
+.topbar h1{
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 300;
+}
+
+.title {
+  font-weight: 900;
+  color: #484848;
+  font-size: 1.4em;
+}
+
+.ranking {
+  display: flex;
+  overflow-x: auto;
+}
+.ranking a {
+  text-decoration: none;
+}
+.ranking article {
+  height: 230px;  
+  margin: 0 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.ranking article:hover {
+  opacity: 1;
+} 
+
+.ranking article h2, .ranking article h6 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.ranking article h2 {
+  font-weight: 300;
+  font-size: 1.2em;
+  width: 180px;
+}
+
+.card-detail {
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 2px #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-detail img {
+  width: 100%;
+}
+.card-detail p {
+  font-size: 1.20em;
+  padding: 0 15px;
+  font-weight: 300;
+  color: #767676;
+}
+
+.button {
+  width: 100%;
+  margin: 15px 0;
+  padding: 5px 0;
+  border-color: #ccc;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: #00A699;
+  color: #fff;
+  font-size: 1.1em;
+  opacity: 0.9;
+  outline: none;
+}
+
+.button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.button:disabled {
+  background-color: #ccc;
+  cursor: no-drop;
+}
+
+.housing {
+  display: flex;
+  border: 1px solid #f2f2f2;
+  box-shadow: 1px 2px 2px #ccc;
+  margin: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.housing img{
+  width: 200px;
+  opacity: 0.8;
+}
+.housing img:hover {
+  opacity: 1;
+}
+.housing div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.housing h3 {
+  margin: 0px;
+  font-weight: 300;
+}
+.housing h6 {
+  margin: 0px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+
+.score div {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+.score p {
+  margin: 0 10px;
+  padding: 0px;
+}
+.score div i {
+  color: #00A699;
+}
+
+.booking-form {
+  margin: 15px 0;
+}
+.booking-form div {
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  margin: 10px 0;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+.booking-form input {
+  width: 100%;
+  padding: 0;
+  font-weight: 300;
+  outline: none;
+  font-size: 1em;
+  background: transparent;
+  border: none;
+  margin: 3px 0;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.booking-form label {
+  color: #777;
+  font-size: 1.1em;
+}
