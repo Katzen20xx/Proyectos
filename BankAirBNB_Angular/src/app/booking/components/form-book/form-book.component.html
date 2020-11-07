@@ -1,0 +1,22 @@
+<section>
+    <form class="form" [formGroup] = "formGroup" >        
+        <div class="control-form">
+            <label>Fecha de Entrada:</label>
+            <input formControlName="startDate" type="date" name="enterDate" />
+        </div>
+        <span class="error"> {{ getError('startDate') }} </span>
+        
+        <div class="control-form">
+            <label>Fecha de Salida:</label>
+            <input formControlName="endDate" type="date" name="outDate" />
+        </div>
+        <span class="error"> {{ getError('endDate') }} </span>
+        
+        <div class="control-form">
+            <label>Solicitudes especiales:</label>
+            <input formControlName="specialRequest" type="text" name="requestText" />
+        </div>
+        
+        <button (click)="reservation()" [disabled]="formGroup.invalid">Reservar</button>
+    </form>
+</section>    

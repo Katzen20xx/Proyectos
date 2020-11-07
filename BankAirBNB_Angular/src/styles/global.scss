@@ -1,0 +1,65 @@
+@import '/src/styles/variables.scss';
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato';
+}
+
+button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 5px 0;
+    border-color: $foggy-color;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: $babu-color;
+    color: #fff;
+    font-size: 1.1em;
+    opacity: 0.9;
+    outline: none;
+  }
+  
+  button:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  button:disabled {
+    background-color: $foggy-color;
+    cursor: no-drop;
+  }
+
+.form {
+    margin: 0 15px;
+    .control-form {
+        border: 1px solid $border-color;
+        background-color: $bg-color;
+        margin: 10px 0;
+        padding: 3px 4px;
+        border-radius: 3px;
+
+        label  {
+            font-size: 0.9em;
+            color: $hof-color;
+            font-weight: 300;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 3px 0;
+            margin: 0;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            color: $hof-color;
+        }
+    }
+}
+
+.error {
+    font-size: 0.78em;
+    color: red;
+    margin: 0;
+}

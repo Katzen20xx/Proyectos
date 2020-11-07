@@ -1,0 +1,39 @@
+@import '/src/styles/variables.scss';
+
+a {
+   text-decoration: none;   
+}
+
+div {
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+    opacity: 0.9;
+    margin: 10px 6px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border: $border-color 1px outset;
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 12px;
+    }
+    h3 {
+        margin: 0;
+        width: 200px;        
+        font-size: 1.1em;
+        font-weight: 300;        
+    }
+    h4 {
+        margin: 0;        
+        font-size: 0.7em;        
+    }
+    app-score {
+        color: $babu-color;
+        display: flex;
+    }  
+}
